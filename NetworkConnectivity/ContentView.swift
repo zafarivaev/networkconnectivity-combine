@@ -6,16 +6,33 @@
 //
 
 import SwiftUI
+import Combine
+import Network
 
 struct ContentView: View {
+    
+    @ObservedObject var viewModel = ViewModel()
+    
     var body: some View {
-        Text("Hello, world!")
+        Text(viewModel.networkStatus == .satisfied ? "Connection is OK" : "Connection lost")
             .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+
+class ViewModel: ObservableObject {
+    private var cancellables = Set<AnyCancellable>()
+    private let monitorQueue = DispatchQueue(label: "monitor")
+    
+    @Published var networkStatus: NWPath.Status = .satisfied
+    
+    init() {
+        NWPathMonitor()
+            .publisher(queue: monitorQueue)
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] status in
+                self?.networkStatus = status
+            }
+            .store(in: &cancellables)
     }
 }

@@ -11,6 +11,8 @@
 		1C2026B7269E037700C7887C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2026B6269E037700C7887C /* ContentView.swift */; };
 		1C2026B9269E037900C7887C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C2026B8269E037900C7887C /* Assets.xcassets */; };
 		1C2026BC269E037900C7887C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C2026BB269E037900C7887C /* Preview Assets.xcassets */; };
+		1C2026C4269E038D00C7887C /* NWPathMonitor+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2026C3269E038D00C7887C /* NWPathMonitor+Combine.swift */; };
+		1C2026C6269E295200C7887C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2026C5269E295200C7887C /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		1C2026B8269E037900C7887C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C2026BB269E037900C7887C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1C2026BD269E037900C7887C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C2026C3269E038D00C7887C /* NWPathMonitor+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NWPathMonitor+Combine.swift"; sourceTree = "<group>"; };
+		1C2026C5269E295200C7887C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				1C2026B4269E037700C7887C /* NetworkConnectivityApp.swift */,
+				1C2026C3269E038D00C7887C /* NWPathMonitor+Combine.swift */,
 				1C2026B6269E037700C7887C /* ContentView.swift */,
+				1C2026C5269E295200C7887C /* ViewController.swift */,
 				1C2026B8269E037900C7887C /* Assets.xcassets */,
 				1C2026BD269E037900C7887C /* Info.plist */,
 				1C2026BA269E037900C7887C /* Preview Content */,
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C2026B7269E037700C7887C /* ContentView.swift in Sources */,
+				1C2026C4269E038D00C7887C /* NWPathMonitor+Combine.swift in Sources */,
+				1C2026C6269E295200C7887C /* ViewController.swift in Sources */,
 				1C2026B5269E037700C7887C /* NetworkConnectivityApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
